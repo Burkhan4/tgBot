@@ -158,3 +158,7 @@ Tez orada operator siz bilan bog'lanadi.
     )
 
     return {"success": True}
+
+@app.get("/ping")
+async def ping():
+    return {"status": "alive"}
